@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    margin: 0; padding: 0;
+    border: 0; outline: none;
+    text-decoration: none;
+    list-style: none; box-sizing: border-box;
+}
+
+:root {
+
+    --header-height: 3.5rem; /* 16 * 3.5 = 56px */
+    
+    /* Renkler */
+    /* Color mode hsl(hue, saturation, lightness) */
+    /* renk tonu (0-360), doygunluk(%0 gri-%100 tam renk), parlaklık(%0 siyah-%100 beyaz) */
+
+    --first-color: hsl(221, 51%, 36%);
+   
+    --second-color: hsl(360, 90%, 63%);
+    --title-color: hsl(228, 57%, 28%);
+    --text-color: hsl(228, 15%, 50%);
+    --text-color-light: hsl(228, 12%, 75%);
+    --border-color: hsl(228, 99%, 98%);
+    --body-color: #fff;
+    --container-color: #fff;
+
+    /* Font and Tipografi */
+    --body-font: 'Poppins', sans-serif;
+    --biggest-font-size: 2.25rem;  /* 36 px */
+    --h1-font-size: 1.5rem;  /* 24px */
+    --h2-font-size: 1.25rem;  /* 20px */
+    --h3-font-size: 1rem;  /* 16px */
+    --normal-font-size: .938rem;  /* 15,008 px */
+    --small-font-size: .813rem;  /* 13,008 px */
+    --smaller-font-size: .75rem;  /* 12px */
+
+    /* Font Weight */
+    --font-medium: 500;
+    --font-semi-bold: 600;
+
+    /* z-index */
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
+
+html {
+    
+    scroll-behavior: smooth;
+
+}
+
+body {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    color: var(--text-color);
+    transition: .3s;
+}
+
+h1,h3,h3 {
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+input,
+button {
+    font-family: var(--body-font);
+    outline: none;
+    border: none;
+}
+
+/*=============== ORTAK CSS SINIFLARI ===============*/
+.container {
+    max-width: 1024px;
+    margin-left: 1.5rem; /* 24px */
+    margin-right: 1.5rem; /* 24px */
+}
+
+.grid {
+    display: grid;
+}
+
+.section {
+    padding: 4.5rem 0 2rem;  /* 72px 0 32px */
+}
+
+.section-title {
+    font-size: var(--h2-font-size);
+    margin-bottom: 1rem;
+}
+
+.main {
+    overflow: hidden;
+}
+
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: .4s;
+}
+
+.navbar {
+    background: var(--color-bg1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: var(--header-height);
+    background: red;
+}
+
+.nav-menu {
+    display: flex;
+}
+
+.nav-menu li {
+    margin: 0 .5rem;
+}
